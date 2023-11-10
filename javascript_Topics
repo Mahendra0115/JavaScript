@@ -1,0 +1,49 @@
+Topics
+1-Variables and functions /arrow functions
+2-Conditionals /if else. -done
+3- loops /for /while /do while     -done
+ 
+// —>JS language
+ 
+
+4-Data types /primitives /objects
+ 
+Language specifics
+1-let /var /const. ——>done
+2-hoisting. —>  done. —>
+3-scopes. —>done
+ 
+// ——>
+// —10-Callbacks -done
+ 
+// —Dom —>.  
+Dom methods. //  done
+ 
+//——>
+
+4-prototypes in js —We are here
+5- es6 classes.   //pending 
+6- array /higher order array finctions. —done 
+7-Asynchronous programming
+8-Callstack /event loop /event queue //covered —>
+
+9-How js works internally. —extended
+10-Asycnhronous callbacks /callback hell
+11-promises. // pending
+12-promise chanining //pending
+13- async await episodes //pending
+
+14-closures. //pending
+15-this operator  /// call apply and bind
+ 
+16 -event delegation. -done
+//destructuring
+//regex
+//date // moment
+//Cookies
+//Void keyword
+//Page redirect
+//Page printing
+//Dialog Boxes
+// Math class
+//debugger;using
