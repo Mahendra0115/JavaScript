@@ -3,20 +3,23 @@
 
 
 
-/*
 
+// simple function
 function dataset(userid){
     console.log(userid);
 }
 dataset(4);
 
 
+
+    // setTimeout function
+
     setTimeout(() => {
         console.log("hello mahendra");
     }, 2000);
- */
+ 
 
-
+// callbackhell using 
     
    function database1(Userid, getNextData){
          setTimeout(()=>{
@@ -44,23 +47,77 @@ dataset(4);
            }
         },2000);
     }
-
-   
-    // callback hell is calling . "nested callback"
+         // callback hell is calling . "nested callback"
     
     database1(1,()=>{
         console.log(`getting data 2....`);
        database2(2,()=>{
         console.log(`getting data 3....`);
         database3(3,()=>{
-            // console.log(`getting data 4....`);
-            // database(4,()=>{
-            //     console.log(`getting data 5....`);
-            //     database(5)
-            // })
+            
         });
        })
     });
+
+
+
+
+
+    // Example - > 2 
+
+
+    
+                       ///call backhell -> Example of Calculatr
+
+function add(a,b,getNextData){
+    setTimeout(()=>{
+        console.log("addition is " , a+b);
+        if(getNextData){
+              getNextData();
+        }
+    },1000);
+}
+
+function sub(a,b,getNextData){
+    setTimeout(()=>{
+        console.log("Subtruction is " , a-b);
+        if(getNextData){
+              getNextData();
+        }
+    },1000);
+}
+
+function mul(a,b,getNextData){
+    setTimeout(()=>{
+        console.log("Multiplication is " , a*b);
+        if(getNextData){
+              getNextData();
+        }
+    },1000);
+}
+
+function dev(a,b,getNextData){
+    setTimeout(()=>{
+        console.log("Division is " , a/b);
+        if(getNextData){
+              getNextData();
+        }
+    },1000);
+}
+
+
+console.log("getting data1....")
+add(4,5, () =>{
+    console.log("getting data2....")
+    sub(4,5, ()=>{
+        console.log("getting data3....")
+        mul(4,5,()=>{
+            console.log("getting data4....")
+            dev(4,5);
+        })
+    })
+})
+
 
     
 
@@ -76,7 +133,7 @@ dataset(4);
 
 //using the "promise chain" to perfrom same operation 
 
-/*
+
 
 
     function database(Userid ){
