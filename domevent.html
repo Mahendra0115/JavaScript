@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+        <h1 id="heading">hello Js</h1>
+        <button id="button-1"> bulb on</button>
+        <button id="button-2">bulb off </button>
+
+
+        <h2>paragraf</h2>
+        <p id="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. In praesentium veniam explicabo? Vel
+            tempora quisquam totam fugiat, consequuntur quidem. Facere impedit nihil praesentium dignissimos in!</p>
+
+
+
+
+    </div>
+
+    <!-- teking  input -->
+
+    <script>
+        //  function demo_function(){
+
+        //      var inputdata = document.getElementById("inputdata").value;
+        //       alert (inputdata);
+        //       console.log("input data", inputdata);
+        // }
+
+        function demo() {
+            var takeparagraf = document.getElementById("inputdata").value;
+            document.getElementById("target").innerHTML = takeparagraf;
+        }
+
+        //  demo_function();
+    </script>
+
+
+
+    <input type="inputdata" id="inputdata">
+    <br>
+    <button onclick="demo_function()"> click me </button>
+
+
+    <P id="target"></P>
+
+
+    <!-- <script src="event.js"></script> -->
+</body>
+
+</html>

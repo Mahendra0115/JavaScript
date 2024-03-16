@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRECTISE Question </title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Hello Mahendra</h2>
+
+
+    <hr>
+
+
+
+    <div class="div1">
+          div 1
+    </div>
+
+    <div class="div1"> div2</div>
+
+    <div class="div1"> div3</div>
+    <div class="div1"> div3</div>
+    <div class="div1"> div3</div>
+    <div class="div1"> div3</div>
+    <div class="div1"> div3</div>
+
+
+
+     
+   
+
+    <script>
+
+/* 
+
+let h2 = document.querySelector("h2");
+console.log(h2);
+
+// (concatinate two string ) or adding new some text
+ h2.innerText = h2.innerText +"Where are you from";
+
+ */
+
+
+
+ 
+
+  //   accessing the Boxs and some  changes 
+  
+
+   /* 
+let divs = document.querySelectorAll(".div1");
+console.log(divs);
+
+// change div text
+divs[0].innerText= "this is unique div";
+
+// add content
+divs[0].innerText = divs[0].innerText+ "this is unique div";
+
+
+//  access  each div in console using this command in console   -> divs[1]
+ 
+
+*/
+
+
+
+
+
+  // using loops   accessing the Boxs and some  changes 
+    
+
+let divs = document.querySelectorAll(".div1");
+  
+ // use  (for of )loop
+let indx = 1;
+  for(let div of divs){
+    div.innerText = `div one unique" ${indx}`;
+    indx ++;
+  }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

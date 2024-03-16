@@ -1,0 +1,80 @@
+ 
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="Style.css">
+    <!-- <link rel="stylesheet" href=""> -->
+
+</head>
+<style>
+
+   .style{
+      height: 300px;
+      width: 300px;
+      border: 2px solid yellow;
+       color: white;
+       background-color: red;
+   }
+
+   .mystyle{
+      height: 300px;
+      width: 300px;
+      border: 2px solid white;
+       color: yellow;
+       background-color:black;
+   }
+   
+
+</style>
+<body>
+    <h1 class="heading">hello this is my heading</h1>
+    
+       <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure sit assumenda, animi delectus maiores debitis amet qui nostrum nesciunt, blanditiis libero. Quaerat, voluptate dolorem.</p>
+
+
+       
+          
+
+       <div id="mydiv" class="mystyle">
+        <h1>mydiv</h1>
+        <p>Lorem ipsum dolor sit amet consectetur       adipisicing elit. Quam, quia.</p>
+          
+       </div>
+
+        <button onClick="Btnfun()" >click me </button>
+       
+      
+
+    <script > 
+   
+let div = document.getElementById("mydiv");
+ 
+  function Btnfun(){
+      const Element =  document.getElementById("mydiv");
+
+      if(Element.className == 'mystyle'){
+           Element.className = 'style';
+      }else{
+          Element.className = 'mystyle';
+      }
+        
+  }
+//   Btnfun(4,5);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+

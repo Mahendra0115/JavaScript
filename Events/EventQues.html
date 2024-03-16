@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggel Button</title>
+</head>
+<body>
+    <button id = "btn1">change-color</button>
+
+    <p id ="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias dolorum suscipit dolor sed eum tempora sequi repellendus magni excepturi corrupti, laboriosam culpa. Accusamus reiciendis excepturi odio commodi voluptates alias?</p>
+
+    <script>
+
+     // this is use to access the "html page's" elements only
+        /* 
+
+         // select Button id
+         let btn1 = document.querySelector("#btn1");
+        //  decleared varr
+         let curMode = "Light";
+        //  add event listener
+         btn1.addEventListener("click",()=>{
+            // applying condition
+            if(curMode === "Light"){
+                curMode = "dark";
+                // applying  style
+                document.querySelector("body").style.backgroundColor="black";
+            } 
+            else{
+                  curMode ="Light";
+                  // applying  style
+                  document.querySelector("body").style.backgroundColor="green";
+                }
+          console.log(curMode)
+            
+         });
+
+         */
+
+
+         // this is use to access the "CSS page's" elements only
+
+
+          
+          let btn1 = document.querySelector("#btn1");
+          let body = document.querySelector("body");
+        // let para = document.querySelector("#para");
+         let curMode = "Light";
+         
+         btn1.addEventListener("click",()=>{
+            
+            if(curMode === "Light"){
+                curMode = "dark";
+                body.classList.add("dark");
+                body.classList.remove("Light");
+            } 
+            else{
+                  curMode ="Light";
+                  body.classList.add("Light");
+                  body.classList.remove("dark");
+                  
+                }
+          console.log(curMode)
+            
+         });
+    </script>
+</body> 
+</html>

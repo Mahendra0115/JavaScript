@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+     <div id="newbox">
+        <h3>listBox</h3>
+        <ul>  list 
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+       
+
+    
+     </div>
+
+     <p id ="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt repellat illo tempore facilis velit veritatis aperiam assumenda alias accusamus.</p>
+     
+
+    <script>
+      
+        //  crete button
+
+let newBtn =  document.createElement("button");
+newBtn.innerText= "click morew";
+ console.log(newBtn);
+
+
+//  add button  last 
+let div = document.querySelector("#newbox");
+div.append(newBtn);
+// div.prepend(newBtn);
+// div.before(newBtn);
+// div.after(newBtn);
+
+
+// add heading 
+let newHeading = document.createElement("h1");
+newHeading.innerHTML="hello mahendra";
+
+// now adding at top these  h1 Element 
+  document.querySelector("body").prepend(newHeading);
+
+
+
+//   remove Element 
+let pera1 = document.querySelector("para");
+para.remove();
+    </script>
+</body>
+</html>
