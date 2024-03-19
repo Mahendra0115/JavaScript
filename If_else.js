@@ -44,7 +44,7 @@
     //    console .log(a === 'b');
 
 
- // Conditional operator--> check the       condotion  is true or false 
+                // Conditional operator--> check the       condotion  is true or false 
 
 //    let  a1=10;
 //    if(a1<= 15){
@@ -54,15 +54,27 @@
 //    }
 
 
-let age = 19;
+// let age = 19;
 
 
-if(age >= 18){
-   console.log("your are elegible ");
-}
-else{
-    console.log("not elegible  for this:");
-}
+// if(age >= 18){
+//    console.log("your are elegible ");
+// }
+// else{
+//     console.log("not elegible  for this:");
+// }
+
+
+// Ternary operator --> (condition ? "true": "false")
+
+   // Ex-> 
+let a = 40;
+let b = 20;
+
+let max;
+
+max = (a>b)?"a is greter":"b is greater";
+ console.log(max);
 
 
 
