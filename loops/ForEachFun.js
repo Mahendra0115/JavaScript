@@ -34,4 +34,15 @@
                 arr3.forEach((num) => {
                console.log(num*num);
               });
+
+
+let arr11 = [5,9,8,6,7]
+const avg =0 ;
+arr11.forEach((val)=>{
+   
+    
+  console.log(val*val*val);
+});
+
+
   

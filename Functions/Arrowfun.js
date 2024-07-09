@@ -1,4 +1,4 @@
-// arrow function --> use to write simple way to write a function
+// arrow function --> it is simple way to write a function
 
 
 
@@ -42,3 +42,29 @@ let string = ()=>{
     // return string;
 }
 string(); 
+
+
+
+
+
+// prectise 
+
+//  let sum = (a,b)=>{
+//  console.log(a+b)
+//     return a+b ;
+//  }
+
+//  sum(8,6);
+
+
+//  const multi = (a,b)=>{
+//     console.log(a*b);
+//  }
+//  multi(5,6);
+
+
+const sub = (a,b)=>{
+    console.log(a-b);
+}
+
+sub(8,2);

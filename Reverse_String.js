@@ -7,6 +7,10 @@ let arrstring =Array.from(str);
 console.log(arrstring);
 
 
+
+
+
+
 // it only convert string to array simple 
 let str2 = "mahendra";
 let arrstring2=str.split(str);
@@ -24,6 +28,9 @@ let  reverse = Array.from(string).reverse("").join(" ");
 console.log(reverse);
 
 
+
+
+
 // reverse using loop 
 
 let string2 = "chandanpatel";
@@ -32,3 +39,16 @@ for(let i = string2.length-1; i >= 0; i--){
     reverse2 += string2[i]
 }
 console.log(reverse2);
+
+
+
+
+
+
+
+
+
+
+
+
+

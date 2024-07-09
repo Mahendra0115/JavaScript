@@ -7,3 +7,10 @@ for(let i of string){
    size++;
 }
 console.log(`size of string is: ${size}`);
+
+// for loop second method 
+
+let i = 5;
+for(let i=0; i<=5; i++){
+console.log(i);
+}

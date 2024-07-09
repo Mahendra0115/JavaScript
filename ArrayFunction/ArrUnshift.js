@@ -3,4 +3,8 @@
 
 let arr1 = ["mahi","sohil"];
 let value = arr1.shift();
-console.log(arr1);
+// console.log(arr1);
+
+let arr2 = ["mahi","sohil"];
+arr2.unshift("hell");
+console.log(arr2);

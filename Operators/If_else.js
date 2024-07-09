@@ -70,9 +70,7 @@
    // Ex-> 
 let a = 40;
 let b = 20;
-
 let max;
-
 max = (a>b)?"a is greter":"b is greater";
  console.log(max);
 

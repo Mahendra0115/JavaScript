@@ -164,3 +164,84 @@ for( let i=1;i<=100;i++){  // i++ -->post increment --> // pre increment ++i
  bar();
 
  // default values are used when you dont pass any args in the function 
+
+
+
+
+
+var num = 10;
+for (let i=0; i<=num; i++){
+    if(i%num==0 && i%2==1){
+        console.log("prime")
+
+    }else{
+        console.log("not prime ");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

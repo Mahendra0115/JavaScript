@@ -523,11 +523,164 @@
 
 
 
-    // constrocture 
+    // // constrocture 
     
-    constructor(a,b){
-        this.a = a;
-        this.b = b
+    // constructor(a,b){
+    //     this.a = a;
+    //     this.b = b
       
+    // }
+    // let 
+
+   
+    
+    // let arr1 = [15,20,30,50,60];
+    // arr1.unshift(5);
+    // console.log(arr1);
+
+//     let Unsift1 = [1,5,3,5,8];
+// let Unsiftarr =Unsift1.unshift(15);
+// // console.log(Unsiftarr);
+// console.log(Unsift1);
+
+// let arr1 = [1,5,3,5,8];
+// let arr2 = [15,20,30,50,60];
+
+// let joint = arr1.concat(arr2);
+// console.log(joint);
+
+// let arr1 = [1,5,3,5,8];
+//  arr1.splice(1,1,16);
+//  console.log(arr1);
+
+// function -> fun is the block of code that is use execute code again and again 
+
+// function add( a,b){
+//     let multi = a*b;
+//      return multi ;
+
+// }
+// let ans = add(2,4);
+// console.log(ans);
+
+// const  addition = (a,b) => {
+
+//    return a+b;
+// }
+// console.log(addition(2,4));
+
+// let pi ;
+// let radious ; 
+
+// const calculateArea = (r) => {
+//     return (3.14)*r*r;
+// }
+//  console.log(calculateArea(5));
+//  console.log(calculateArea(10));
+
+// let s = 0;
+// let r, n;
+// let  num = 123;
+// const isPalandrom = ()=>{
+    
+    
+//     while(n!=0){
+//         r = n%10;
+//         s = s*10 + r;
+//         n = Math.floor(n/10);
+//     }
+
+//    return s;
+// // if(temp == s){
+// //     console.log("number is palandrom")
+// // }else{
+// //     console.log("not palandrom");
+// // }
+// }
+//  isPalandrom();
+ 
+
+
+//  let s = 0;
+// let r, n;
+// let str = "madam";
+// const isPalindrome = () => {
+//     n = str;
+//     s = 0;
+//     let temp = 0;
+//     while (str != 0) {
+//         r = n % 10;
+//         s = s * 10 + r;
+//         n = Math.floor(n / 10);
+//     }
+//     return temp === s;
+// }
+// console.log(isPalindrome()); // true or false
+
+
+
+// let s = 0;
+// let r, n;
+// let str = "madam";
+// const isPalindrome = () => {
+//     n = parseInt(str, 10);
+//     s = 0;
+//     let temp = 0;
+//     while (n!= 0) {
+//         r = n % 10;
+//         s = s * 10 + r;
+//         n = Math.floor(n / 10);
+//     }
+//     return temp === s;
+// }
+// console.log(isPalindrome()); // true
+
+
+// const arr1 = [10,20,30,40];
+// arr1.forEach((val)=>{
+//     if (val == '50'){
+//         console.log("value is present  array ");
+//         arr1.splice(2,1,3);
+        
+
+//  }
+ 
+
+// })
+// console.log(arr1);
+// // console.log(`value is present `)
+
+// let arr1 = [2,3,4,5];
+
+//      let new_arr = arr1.filter((val )=>{
+//       if(val%2 == 0){
+//           return val;
+//       }
+//      });
+//      console.log(new_arr);
+    // console.log(new_arr)
+
+
+    // const marks =[2,5,6,2]
+    // const sum = marks.reduce((acc,cur)=>{
+    //     return acc+cur;
+    // })
+    // console.log(sum);
+    let string2 = "chandanpatel";
+    let reverse2 ;
+    for(let i = string2.length-1; i >= 0; i--){
+        reverse2 += string2[i]
     }
-    let 
+    console.log(reverse2);
+
+
+// let str = "mahendra"
+// let reversestr = Array.from(str).reverse(" ").join(" ");
+// console.log(reversestr);
+
+// let string = "chandan";
+// let revstr ;
+// for ( let i=string.length-1; i>=0; i--);{
+//     revstr = revstr + string[i];
+// } 
+// console.log(revstr);
