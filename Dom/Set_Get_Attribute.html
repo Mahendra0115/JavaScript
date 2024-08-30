@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="Url" class="chat-gpt-online" href="https://chatgpt.com/">Chat GPT</a>
+    <button type="button" onclick="getAttribute()">Get</button>
+    <button type="button" onclick="setAttribute()">Set</button>
+</body>
+<script>
+  const getAttribute = () => {
+     let url = document.getElementById('Url');
+     let result = url.getAttribute('href');
+     console.log(result);
+  }
+
+  const setAttribute = () => {
+     let seturl = document.getElementById('Url');
+     seturl.setAttribute("href","https://www.youtube.com/");
+     console.log("URL attribute set to https://www.youtube.com/");
+  }
+</script>
+</html>

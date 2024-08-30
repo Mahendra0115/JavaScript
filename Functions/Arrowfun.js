@@ -63,8 +63,8 @@ string();
 //  multi(5,6);
 
 
-const sub = (a,b)=>{
-    console.log(a-b);
-}
+// const sub = (a,b)=>{
+//     console.log(a-b);
+// }
 
-sub(8,2);
+// sub(8,2);

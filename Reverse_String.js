@@ -3,8 +3,8 @@
 let str = "mahendra";
 let arrstring =Array.from(str);
 
-
 console.log(arrstring);
+
 
 
 
@@ -34,7 +34,7 @@ console.log(reverse);
 // reverse using loop 
 
 let string2 = "chandanpatel";
-let reverse2 ;
+let reverse2 = 0 ;
 for(let i = string2.length-1; i >= 0; i--){
     reverse2 += string2[i]
 }

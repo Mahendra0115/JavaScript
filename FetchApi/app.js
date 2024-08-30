@@ -12,6 +12,7 @@ const URL = "https://cat-fact.herokuapp.com/facts" ;
  const fectpara = document.querySelector("#fact");
  const btn = document.querySelector("#btn");
 
+ 
 
 // using Async and await
 
