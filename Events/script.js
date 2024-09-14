@@ -40,9 +40,9 @@ div.onmouseover = ()=>{
 
 
  /* 
- // Event Listener -> * It is use to perform multiple operation in  one  event . it have two  arguments Like -> addEventListener( event, callback). let btn1 = document.querySelector("#btn1");  
+ // Event Listener -> * It is use to perform multiple operation in  one  event . it have two  arguments Like -> addEventListener( event, callback).
 
-
+  
     let btn1 = document.querySelector("#btn1");              
     btn1.addEventListener("click", (evnt)=>{
         console.log("butten clicked");

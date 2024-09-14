@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div class="Images" > 
+        <ul id="List" >
+            <li > <a href="https://google.com"> <img src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="50px"width="50px" id="image1">image1</a></li>
+            <li><img src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="50px"width="50px" id="image2"></li>
+            <li><img src="https://media.istockphoto.com/id/121199853/photo/closeup-of-guy-working-on-a-laptop-indoor.jpg?s=1024x1024&w=is&k=20&c=0uAngvDAolHrh_LUWorV6ZJD5AVO6g2tfavtw9PPHYQ="    height="50px"width="50px" alt="" id="image3"></li>
+        </ul>
+        <h4>peragraf</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, harum. Sint quae possimus iste cupiditate?</p>
+    </div>
+
+</body>
+<script>
+
+  document.querySelector('.Images').addEventListener('click',(e)=>{
+//   console.log(e.target.parentNode); // targer is wroking like innerText. it return target value
+ console.log(e.target.tagName);// return tagName in console
+
+
+                  // Remove Elements
+
+//    let removeIt = e.target.parentNode;
+//    removeIt.remove();
+//    console.log(`removed element from node ${removeIt}`) ;
+
+
+
+    // jab hame koi bhi element tag by tag delete karna ho.
+  
+    /* 
+if(e.target.tagName === "IMG"){
+    
+    let removeIt = e.target.parentNode;
+    removeIt.remove();
+    // delete hone ke bad ushke jagh per id print ho jaye 
+    // console.log(e.target.id);
+
+}
+
+*/
+
+  });
+</script>
+</html>

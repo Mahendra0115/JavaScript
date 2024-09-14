@@ -7,11 +7,37 @@
 </head>
 <body>
 
+<h1>Dom Manupulation </h1>
+ <p id ="text">Lorem ipsum dolor sit amet.</p>
+  
+ <div class="container">
+    <ul id="list">
+        <h3 id="Fruts">fruits</h3>
+        <li>apple</li>
+        <li>mango</li>
+        <li>guava</li>
+    </ul>
 
+    <div class="Days">
+        <h3>Days: </h3>
+        <p>sunday</p>
+        <p>tuesday</p>
+        <p>monday</p>
+    </div>
+    <div class="mahi">
+        <p>mahendra</p>
+    </div>
+    <div class="chand">
+        <p>Chand</p>
+    </div>
+
+   
+ </div>
     
+
     <script>
         // selecting Element by using (id,tag,class)
-        /*
+       /*  
         var element = document.getElementById('para');
         console.log(element);
  
@@ -22,6 +48,10 @@
         console.log(tag);
  
         */
+       var result;
+       result = document.querySelector('#list'); 
+        //  result = document.querySelectorAll('.container');
+        console.log(result);
  
              // selecting element by using QuerySelector
        

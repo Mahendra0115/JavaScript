@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fruits" style="background-color: #414141">
+        <ul id="List" >
+            <li > <a href="https://google.com"> <img src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="50px"width="50px" id="image1">image1</a></li>
+            <li><img src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="50px"width="50px" id="image2"></li>
+            <li><img src="https://media.istockphoto.com/id/121199853/photo/closeup-of-guy-working-on-a-laptop-indoor.jpg?s=1024x1024&w=is&k=20&c=0uAngvDAolHrh_LUWorV6ZJD5AVO6g2tfavtw9PPHYQ="    height="50px"width="50px" alt="" id="image3"></li>
+        </ul>
+    </div>
+
+
+    <div class="fruits2">
+        <ul id="list">
+           <li id="apple">apple</li>
+           <li id="banana">banana</li>
+           <li id="guava">guava</li>
+        </ul>
+    </div>
+</body>
+
+<script>
+/*
+
+                // false:- use for bubliing 
+    document.getElementById('List').addEventListener('click' , function(e){
+      console.log("clicked inside ul");
+    },false); 
+
+    document.getElementById('image2').addEventListener('click' , function(e){
+      console.log("clicked on image2:");
+       // stop eventprapogation 
+        e.stopPropagation() // it stop to print upper false statement
+    },false); 
+
+
+    */
+
+   
+/*
+    document.getElementById('List').addEventListener('click' , function(e){
+      console.log("clicked inside ul");
+    },true); 
+
+    document.getElementById('image3').addEventListener('click' , function(e){
+      console.log("clicked on image3:");
+    },true);  //true :- use for capchutring  print (top - bottom ) output
+
+    
+    document.getElementById('image1').addEventListener('click',(e)=>{
+        //e.stopPropagation();
+        e.preventDefault(); // utomatacily event nahi chalega 
+    },false)
+
+
+    */
+
+
+        //  fruits list
+
+        document.querySelector('.fruits2').addEventListener('click',(e)=>{
+            console.log(e);
+
+            // console.log(e.target.tagName);
+
+            if(e.target.tagName === 'LI'){
+                let removeIt = e.target.parentNode;
+                removeIt.remove();
+                console.log(e.target.id);
+            }
+        },false);
+
+       
+
+
+
+
+
+
+</script>
+
+
+</html>

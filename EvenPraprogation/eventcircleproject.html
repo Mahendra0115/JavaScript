@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Create Circle</title>
+    <style>
+        /* Style for the div where circles will be drawn */
+        #clickableDiv {
+            width: 100%;
+            height: 100vh;
+            border: 1px solid #000;
+            position: relative; /* Makes sure elements are positioned inside relative to this div */
+        }
+
+        /* Style for the circle */
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute; /* Makes it possible to position at exact click location */
+        }
+    </style>
+</head>
+<body>
+
+<div id="clickableDiv"></div>
+
+<script>
+    // Function to create a circle at the click location
+    document.getElementById('clickableDiv').addEventListener('click', function(event) {
+        // Create a new div to represent the circle
+        var circle = document.createElement('div');
+        circle.classList.add('circle'); // Add the 'circle' class to the new div
+
+        // Get the position where the user clicked (event.pageX and event.pageY)
+        var x = event.pageX - 15; // Adjusting for the circle's radius (half of 30px)
+        var y = event.pageY - 15;
+
+        // Position the circle at the click location
+        circle.style.left = x + 'px';
+        circle.style.top = y + 'px';
+
+        // Append the circle to the clickable div
+        document.getElementById('clickableDiv').appendChild(circle);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Whiteboard with Erase & Drag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #toolbar {
+            margin-bottom: 10px;
+        }
+
+        #toolbar button, #toolbar input {
+            margin-right: 10px;
+        }
+
+        #whiteboard {
+            border: 2px solid #000;
+            width: 100%;
+            height: 80vh;
+            position: relative;
+            cursor: crosshair;
+        }
+
+        /* Style for text to be draggable */
+        .draggable-text {
+            position: absolute;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+
+<div id="toolbar">
+    <button id="eraseBtn">Erase</button>
+    <button id="dragBtn">Drag</button>
+    <input type="color" id="colorPicker" value="#000000">
+</div>
+
+<canvas id="whiteboard"></canvas>
+
+<script>
+    // Set up canvas and context
+    const canvas = document.getElementById('whiteboard');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight * 0.8;
+
+    let isDrawing = false;
+    let isErasing = false;
+    let isDragging = false;
+    let color = '#000000';
+
+    // Initialize the drawing feature
+    function startDrawing(e) {
+        if (isErasing || isDragging) return;
+        isDrawing = true;
+        ctx.beginPath();
+        ctx.moveTo(e.offsetX, e.offsetY);
+    }
+
+    function draw(e) {
+        if (!isDrawing || isErasing || isDragging) return;
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    }
+
+    function stopDrawing() {
+        isDrawing = false;
+        ctx.closePath();
+    }
+
+    // Event listeners for drawing on the canvas
+    canvas.addEventListener('mousedown', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDrawing);
+    canvas.addEventListener('mouseout', stopDrawing);
+
+    // Erase button functionality (clear the entire canvas)
+    const eraseBtn = document.getElementById('eraseBtn');
+    eraseBtn.addEventListener('click', () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clears the entire canvas
+    });
+
+    // Drag button functionality (for dragging text)
+    const dragBtn = document.getElementById('dragBtn');
+    dragBtn.addEventListener('click', () => {
+        isDragging = !isDragging;
+        isErasing = false;
+        if (isDragging) {
+            canvas.style.cursor = 'move';
+        } else {
+            canvas.style.cursor = 'crosshair';
+        }
+    });
+
+    // Color picker functionality
+    const colorPicker = document.getElementById('colorPicker');
+    colorPicker.addEventListener('change', (e) => {
+        color = e.target.value;
+    });
+
+    // Enable dragging for text (as an extra feature)
+    let draggedText = null;
+    function startDrag(e) {
+        if (!isDragging) return;
+        let textElement = document.createElement('div');
+        textElement.textContent = "Drag Me!";
+        textElement.classList.add('draggable-text');
+        textElement.style.left = e.clientX + 'px';
+        textElement.style.top = e.clientY + 'px';
+        document.body.appendChild(textElement);
+        draggedText = textElement;
+    }
+
+    function dragText(e) {
+        if (!draggedText) return;
+        draggedText.style.left = e.clientX + 'px';
+        draggedText.style.top = e.clientY + 'px';
+    }
+
+    function stopDrag() {
+        draggedText = null;
+    }
+
+    // Adding drag event listeners
+    canvas.addEventListener('mousedown', startDrag);
+    canvas.addEventListener('mousemove', dragText);
+    canvas.addEventListener('mouseup', stopDrag);
+
+</script>
+
+</body>
+</html>

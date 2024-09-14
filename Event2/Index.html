@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name" id="name">name</label>
+        <!-- Step:1     onclick="alert('clicked')" -->
+        <button type="buttom" id="btn1" onclick="alert('btn1 clicked')"  >btn 1</button> <br>
+    <button type="buttom" id="btn2"  >btn 2</button> <br>
+    <button type="buttom" id="btn3" >click 3</button>
+</body>
+<script>
+
+    // Step:2 
+   document.getElementById('btn2').onclick = function(){
+        alert('btn2 clicked');
+        
+    }
+
+    // Step:3 EventListemer --> it provide events imformation
+    document.getElementById('btn3').addEventListener('click',(e)=>{
+        alert('btn3 clicked');
+        console.log(e);
+    })
+
+    //attachEvent -- > InternetExplorer pe use uta tha pahle
+    // jQuery --> on : addEventListener ki jagah par use karte the .
+
+    /*  panding events name : 
+
+    Type :-  Event ke types
+    timestamp:- date Activity and time etc
+    defaultPrevented :- apne app koi kam hone se rokna . jese Form ka submit hona ,
+
+    target: 
+    srcElement:- 
+    currentTarget: ,
+
+    clientX:
+    clientY:
+    screenX:
+    screenY:
+
+    altKey:
+    ctrlKey:
+    shiftKey:
+    keyCode:
+    */
+
+</script>
+</html>
